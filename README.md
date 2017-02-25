@@ -1,0 +1,1 @@
+# i18n-assets-grails2
