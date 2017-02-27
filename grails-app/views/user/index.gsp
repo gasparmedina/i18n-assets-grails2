@@ -82,7 +82,7 @@
     }
     </style>
     <g:set var="locale" value="${session.'org.springframework.web.servlet.i18n.SessionLocaleResolver.LOCALE'}"/>
-    <asset:i18n locale="${LocaleContextHolder.getLocale()}"/>
+    <asset:i18n locale="${Locale.default.toString()}"/>
 
 </head>
 

@@ -1,8 +1,10 @@
 // Place your Spring DSL code here
-beans = {
+import org.springframework.context.i18n.LocaleContextHolder
 
-//   localeResolver(org.springframework.web.servlet.i18n.SessionLocaleResolver) {
-//        defaultLocale = new Locale("fr", "FR")
-//        java.util.Locale.setDefault(defaultLocale)
-//    } 
+beans = {
+	localeResolver(org.springframework.web.servlet.i18n.SessionLocaleResolver) {
+		def locale = LocaleContextHolder.getLocale()
+		defaultLocale = new Locale("de","DE")
+		java.util.Locale.setDefault(locale)
+	 }
 }
